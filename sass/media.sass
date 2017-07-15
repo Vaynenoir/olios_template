@@ -6,13 +6,14 @@
 		padding: 40px!important
 	.product__column_right__top_block
 		padding: 40px 40px 0 40px!important
-		h2
-			margin-left: 6rem!important
-			font-size: 2rem!important
-		span
-			img
-				width: 40px
-				height: 44px
+		.top__nav
+			&__title
+				margin-left: 6rem!important
+				font-size: 2rem!important
+			&__subtitle
+				&_img
+					width: 40px
+					height: 44px
 	.product__column_right__content
 		padding: 0 40px 0 40px!important
 	.product__column__bottom_block
@@ -24,10 +25,11 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1200px)
 	.product__column_right__content
-		&_main
-			width: 100%!important
-		.blue_color
-			font-size: 4rem!important
+		.content
+			&__main
+				width: 100%!important
+			&__title
+				font-size: 4rem!important
 	.column_content
 		&__submit_button
 			button
@@ -40,13 +42,14 @@
 		padding: 20px!important
 	.product__column_right__top_block
 		padding: 20px 20px 0 20px!important
-		h2
-			margin-left: 4rem!important
-			font-size: 1.5rem!important
-		span
-			img
-				width: 40px
-				height: 44px
+		.top__nav
+			&__title
+				margin-left: 4rem!important
+				font-size: 1.5rem!important
+			&__subtitle
+				&_img
+					width: 40px
+					height: 44px
 	.product__column_right__content
 		padding: 0 20px 0 20px!important
 	#menuIcon
@@ -60,8 +63,9 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 768px)
 	.product__column_right__top_block
-		span
-			display: none
+		.top__nav
+			&__subtitle
+				display: none
 	.product__column_right__content
 		height: 500px!important
 		margin-left: 3rem!important
@@ -87,8 +91,8 @@
 			width: 100%!important
 	.bottom_block__items_1
 		font-size: 1rem
-	.product__column_left__top_block
-		img
+	.top_block
+		&__img
 			width: 22px!important
 			height: 20px!important
 	.bottom_block__recomended
